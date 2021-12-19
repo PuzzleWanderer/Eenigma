@@ -98,7 +98,7 @@ class EenigmaTest(unittest.TestCase):
     def test_5_ERR_not_only_eng(self):
         self.assertEqual(Eencode('3534', [5-1,14-1,18-1], rotors, commutator)[0], '(ERROR: contains not English letter)')
 
-    def test_4_ERR_not_str(self):
+    def test_6_ERR_not_str(self):
         self.assertEqual(Eencode([1,2], [5-1,14-1,18-1], rotors, commutator)[0], '(ERROR: input is not a string)')
     
 
